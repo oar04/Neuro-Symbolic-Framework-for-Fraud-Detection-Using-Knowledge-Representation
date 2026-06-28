@@ -1,0 +1,3162 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/osman/fraud-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/osman/fraud-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/osman/fraud-ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontology for Neo4j graph-enhanced fraud detection, XAI, model comparison, and semantic reasoning.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Graph-Enhanced Fraud Detection Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Addr1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Addr2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Browser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Card"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Card1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Card2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Card3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Card5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CardNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CardType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Community"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeviceType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmailDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FraudRiskIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FraudulentTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GraphEvidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GraphFlaggedTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRiskAddress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRiskCard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRiskCommunity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRiskDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRiskEmailDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRiskEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRiskProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegitimateTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelEvidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelFlaggedTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PayerEmailDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReceiverEmailDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RequiresInvestigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskEvidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskExplanation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskScore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScreenResolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticEvidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemanticallySuspiciousTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StronglySuspiciousTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuspiciousInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuspiciousTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThresholdPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToCommunity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evidenceRefersToCommunity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evidenceRefersToEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#explainsTransaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGraphEvidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModelEvidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRiskEvidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRiskExplanation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSemanticEvidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sharesInfrastructureWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedAddr1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedAddr2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedBrowser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedCard1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedCard2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedCard3"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedCard5"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedCardNetwork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedCardType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedDeviceType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedOperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedPayerEmailDomain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedReceiverEmailDomain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedScreenResolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesEntity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#communityFraudRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#communityId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#communitySize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#degree"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#entityFraudRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#entityId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#evidenceStrength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#explanationText"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fraudTransactionCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#highRiskEntityCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isFraud"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxEntityFraudRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#modelRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#neuralNetworkScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pageRank"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#randomForestScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#riskLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#semanticRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalTransactionCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#transactionAmount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#transactionDatetime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#transactionId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#xgboostScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CriticalRisk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighRisk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowRisk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumRisk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_AddressHighRiskByFraudRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_CardHighRiskByFraudRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_CommunityHighRiskByFraudRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_DeviceHighRiskByFraudRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_EmailDomainHighRiskByFraudRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_ModelFlaggedByRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_RequiresInvestigation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_StrongSuspicionByMultipleHighRiskEntities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_SuspicionByMaxEntityFraudRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_TransactionSuspiciousByHighRiskCommunity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_TransactionSuspiciousByHighRiskDevice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_TransactionSuspiciousByHighRiskEmail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rule_TransactionSuspiciousByReceiverEmail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#test_device_1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#implementationNote"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#recommendedThreshold"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#xaiPurpose"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Addr1"/>
+        <Class IRI="#Address"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Addr2"/>
+        <Class IRI="#Address"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Address"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Browser"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Card"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Card1"/>
+        <Class IRI="#Card"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Card2"/>
+        <Class IRI="#Card"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Card3"/>
+        <Class IRI="#Card"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Card5"/>
+        <Class IRI="#Card"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CardNetwork"/>
+        <Class IRI="#Card"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CardType"/>
+        <Class IRI="#Card"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Community"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeviceType"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmailDomain"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FraudulentTransaction"/>
+        <Class IRI="#Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GraphEvidence"/>
+        <Class IRI="#RiskEvidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GraphFlaggedTransaction"/>
+        <Class IRI="#SuspiciousTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRiskAddress"/>
+        <Class IRI="#Address"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRiskCard"/>
+        <Class IRI="#Card"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRiskCommunity"/>
+        <Class IRI="#Community"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRiskDevice"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRiskEmailDomain"/>
+        <Class IRI="#EmailDomain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRiskEntity"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRiskProduct"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegitimateTransaction"/>
+        <Class IRI="#Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelEvidence"/>
+        <Class IRI="#RiskEvidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelFlaggedTransaction"/>
+        <Class IRI="#SuspiciousTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperatingSystem"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PayerEmailDomain"/>
+        <Class IRI="#EmailDomain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Product"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReceiverEmailDomain"/>
+        <Class IRI="#EmailDomain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RequiresInvestigation"/>
+        <Class IRI="#SuspiciousTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScreenResolution"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticEvidence"/>
+        <Class IRI="#RiskEvidence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemanticallySuspiciousTransaction"/>
+        <Class IRI="#SuspiciousTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StronglySuspiciousTransaction"/>
+        <Class IRI="#SuspiciousTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuspiciousInfrastructure"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuspiciousTransaction"/>
+        <Class IRI="#Transaction"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#FraudRiskIndicator"/>
+        <NamedIndividual IRI="#CriticalRisk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FraudRiskIndicator"/>
+        <NamedIndividual IRI="#HighRisk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FraudRiskIndicator"/>
+        <NamedIndividual IRI="#LowRisk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FraudRiskIndicator"/>
+        <NamedIndividual IRI="#MediumRisk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_AddressHighRiskByFraudRate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_CardHighRiskByFraudRate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_CommunityHighRiskByFraudRate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_DeviceHighRiskByFraudRate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_EmailDomainHighRiskByFraudRate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_ModelFlaggedByRiskScore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_RequiresInvestigation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_StrongSuspicionByMultipleHighRiskEntities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_SuspicionByMaxEntityFraudRate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_TransactionSuspiciousByHighRiskCommunity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_TransactionSuspiciousByHighRiskDevice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_TransactionSuspiciousByHighRiskEmail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ThresholdPolicy"/>
+        <NamedIndividual IRI="#Rule_TransactionSuspiciousByReceiverEmail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#test_device_1"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#entityFraudRate"/>
+        <NamedIndividual IRI="#test_device_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.95</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasGraphEvidence"/>
+        <ObjectProperty IRI="#hasRiskEvidence"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasModelEvidence"/>
+        <ObjectProperty IRI="#hasRiskEvidence"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSemanticEvidence"/>
+        <ObjectProperty IRI="#hasRiskEvidence"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedAddr1"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedAddr2"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedBrowser"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedCard1"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedCard2"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedCard3"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedCard5"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedCardNetwork"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedCardType"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedDevice"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedDeviceType"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedOperatingSystem"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedPayerEmailDomain"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedProduct"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedReceiverEmailDomain"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedScreenResolution"/>
+        <ObjectProperty IRI="#usesEntity"/>
+    </SubObjectPropertyOf>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#sharesInfrastructureWith"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToCommunity"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evidenceRefersToCommunity"/>
+        <Class IRI="#RiskEvidence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#evidenceRefersToEntity"/>
+        <Class IRI="#RiskEvidence"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#explainsTransaction"/>
+        <Class IRI="#RiskExplanation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGraphEvidence"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModelEvidence"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRiskEvidence"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRiskExplanation"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSemanticEvidence"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sharesInfrastructureWith"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedAddr1"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedAddr2"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedBrowser"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedCard1"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedCard2"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedCard3"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedCard5"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedCardNetwork"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedCardType"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedDevice"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedDeviceType"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedOperatingSystem"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedPayerEmailDomain"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedProduct"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedReceiverEmailDomain"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedScreenResolution"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesEntity"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToCommunity"/>
+        <Class IRI="#Community"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evidenceRefersToCommunity"/>
+        <Class IRI="#Community"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#evidenceRefersToEntity"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#explainsTransaction"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGraphEvidence"/>
+        <Class IRI="#GraphEvidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModelEvidence"/>
+        <Class IRI="#ModelEvidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRiskEvidence"/>
+        <Class IRI="#RiskEvidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRiskExplanation"/>
+        <Class IRI="#RiskExplanation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSemanticEvidence"/>
+        <Class IRI="#SemanticEvidence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sharesInfrastructureWith"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedAddr1"/>
+        <Class IRI="#Addr1"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedAddr2"/>
+        <Class IRI="#Addr2"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedBrowser"/>
+        <Class IRI="#Browser"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedCard1"/>
+        <Class IRI="#Card1"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedCard2"/>
+        <Class IRI="#Card2"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedCard3"/>
+        <Class IRI="#Card3"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedCard5"/>
+        <Class IRI="#Card5"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedCardNetwork"/>
+        <Class IRI="#CardNetwork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedCardType"/>
+        <Class IRI="#CardType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedDevice"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedDeviceType"/>
+        <Class IRI="#DeviceType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedOperatingSystem"/>
+        <Class IRI="#OperatingSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedPayerEmailDomain"/>
+        <Class IRI="#PayerEmailDomain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedProduct"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedReceiverEmailDomain"/>
+        <Class IRI="#ReceiverEmailDomain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedScreenResolution"/>
+        <Class IRI="#ScreenResolution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesEntity"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#communityFraudRate"/>
+        <Class IRI="#Community"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#communityId"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#communitySize"/>
+        <Class IRI="#Community"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#degree"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#entityFraudRate"/>
+        <Class IRI="#Entity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#entityId"/>
+        <Class IRI="#Entity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#evidenceStrength"/>
+        <Class IRI="#RiskEvidence"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#explanationText"/>
+        <Class IRI="#RiskExplanation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fraudTransactionCount"/>
+        <Class IRI="#Entity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#highRiskEntityCount"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isFraud"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maxEntityFraudRate"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#modelRiskScore"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#neuralNetworkScore"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pageRank"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#randomForestScore"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#riskLevel"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#semanticRiskScore"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#totalTransactionCount"/>
+        <Class IRI="#Entity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transactionAmount"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transactionDatetime"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transactionId"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#xgboostScore"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#communityFraudRate"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#communityId"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#communitySize"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#degree"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#entityFraudRate"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#entityId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#evidenceStrength"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#explanationText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fraudTransactionCount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#highRiskEntityCount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isFraud"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maxEntityFraudRate"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#modelRiskScore"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#neuralNetworkScore"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pageRank"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#randomForestScore"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#riskLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#semanticRiskScore"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#totalTransactionCount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#transactionAmount"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#transactionDatetime"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#transactionId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#xgboostScore"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_AddressHighRiskByFraudRate</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Address"/>
+                <Variable IRI="#a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#entityFraudRate"/>
+                <Variable IRI="#a"/>
+                <Variable IRI="#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.50</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighRiskAddress"/>
+                <Variable IRI="#a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_CardHighRiskByFraudRate</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Card"/>
+                <Variable IRI="#c"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#entityFraudRate"/>
+                <Variable IRI="#c"/>
+                <Variable IRI="#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.50</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighRiskCard"/>
+                <Variable IRI="#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_CommunityHighRiskByFraudRate</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Community"/>
+                <Variable IRI="#c"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#communityFraudRate"/>
+                <Variable IRI="#c"/>
+                <Variable IRI="#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.05</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighRiskCommunity"/>
+                <Variable IRI="#c"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_DeviceHighRiskByFraudRate</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Device"/>
+                <Variable IRI="#d"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#entityFraudRate"/>
+                <Variable IRI="#d"/>
+                <Variable IRI="#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.80</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighRiskDevice"/>
+                <Variable IRI="#d"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_EmailDomainHighRiskByFraudRate</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#EmailDomain"/>
+                <Variable IRI="#e"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#entityFraudRate"/>
+                <Variable IRI="#e"/>
+                <Variable IRI="#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.50</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighRiskEmailDomain"/>
+                <Variable IRI="#e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_StrongSuspicionByGraphAndSemanticEvidence</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#SemanticallySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#GraphFlaggedTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#StronglySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_TransactionSuspiciousByHighRiskAddress</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#usedAddr1"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#a"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#HighRiskAddress"/>
+                <Variable IRI="#a"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SemanticallySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_TransactionSuspiciousByHighRiskCard</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#usedCard1"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#c"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#HighRiskCard"/>
+                <Variable IRI="#c"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SemanticallySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_TransactionSuspiciousByHighRiskCommunity</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#belongsToCommunity"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#c"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#HighRiskCommunity"/>
+                <Variable IRI="#c"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#GraphFlaggedTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_TransactionSuspiciousByHighRiskDevice</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#usedDevice"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#d"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#HighRiskDevice"/>
+                <Variable IRI="#d"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SemanticallySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_TransactionSuspiciousByHighRiskPayerEmail</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#usedPayerEmailDomain"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#HighRiskEmailDomain"/>
+                <Variable IRI="#e"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SemanticallySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_TransactionSuspiciousByHighRiskReceiverEmail</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#usedReceiverEmailDomain"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#e"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#HighRiskEmailDomain"/>
+                <Variable IRI="#e"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SemanticallySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_RequiresInvestigationByModelAndSemanticEvidence</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#ModelFlaggedTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#SemanticallySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RequiresInvestigation"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_ProductHighRiskByFraudRate</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Product"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#entityFraudRate"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.20</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighRiskProduct"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_RequiresInvestigationByStrongSuspicion</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#StronglySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RequiresInvestigation"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_StrongSuspicionByMultipleHighRiskEntities</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#highRiskEntityCount"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#c"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#c"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#StronglySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_StrongSuspicionByMaxEntityFraudRate</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#maxEntityFraudRate"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.50</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#StronglySuspiciousTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Rule_ModelFlaggedByRiskScore</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#modelRiskScore"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#s"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="#s"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.80</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#ModelFlaggedTransaction"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Addr1</IRI>
+        <Literal>Addr1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Addr1</IRI>
+        <Literal>IEEE-CIS addr1 entity; maps to Neo4j label Addr1.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Addr1</IRI>
+        <Literal>Addr1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Addr2</IRI>
+        <Literal>Addr2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Addr2</IRI>
+        <Literal>IEEE-CIS addr2 entity; maps to Neo4j label Addr2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Addr2</IRI>
+        <Literal>Addr2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Address</IRI>
+        <Literal>Generic address-related entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Address</IRI>
+        <Literal>Address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Browser</IRI>
+        <Literal>Browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Browser</IRI>
+        <Literal>Browser extracted from device information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Browser</IRI>
+        <Literal>Browser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Card</IRI>
+        <Literal>Generic card-related entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Card</IRI>
+        <Literal>Card</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Card1</IRI>
+        <Literal>Card1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Card1</IRI>
+        <Literal>IEEE-CIS card1 entity; maps to Neo4j label Card1.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Card1</IRI>
+        <Literal>Card1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Card2</IRI>
+        <Literal>Card2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Card2</IRI>
+        <Literal>IEEE-CIS card2 entity; maps to Neo4j label Card2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Card2</IRI>
+        <Literal>Card2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Card3</IRI>
+        <Literal>Card3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Card3</IRI>
+        <Literal>IEEE-CIS card3 entity; maps to Neo4j label Card3.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Card3</IRI>
+        <Literal>Card3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Card5</IRI>
+        <Literal>Card5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Card5</IRI>
+        <Literal>IEEE-CIS card5 entity; maps to Neo4j label Card5.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Card5</IRI>
+        <Literal>Card5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#CardNetwork</IRI>
+        <Literal>CardNetwork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CardNetwork</IRI>
+        <Literal>Card network such as visa or mastercard.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CardNetwork</IRI>
+        <Literal>CardNetwork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#CardType</IRI>
+        <Literal>CardType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CardType</IRI>
+        <Literal>Card type such as debit or credit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CardType</IRI>
+        <Literal>CardType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Community</IRI>
+        <Literal>Community</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Community</IRI>
+        <Literal>Graph community discovered by Louvain or another community algorithm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Community</IRI>
+        <Literal>Community</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CriticalRisk</IRI>
+        <Literal>CriticalRisk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Device</IRI>
+        <Literal>Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Device</IRI>
+        <Literal>Device identifier or device information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Device</IRI>
+        <Literal>Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#DeviceType</IRI>
+        <Literal>DeviceType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeviceType</IRI>
+        <Literal>Device type such as desktop or mobile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeviceType</IRI>
+        <Literal>DeviceType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EmailDomain</IRI>
+        <Literal>Generic email domain entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EmailDomain</IRI>
+        <Literal>EmailDomain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Entity</IRI>
+        <Literal>Any reusable entity connected to transactions in the fraud graph.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Entity</IRI>
+        <Literal>Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FraudRiskIndicator</IRI>
+        <Literal>A named risk indicator used for explanation and triage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FraudRiskIndicator</IRI>
+        <Literal>FraudRiskIndicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FraudulentTransaction</IRI>
+        <Literal>A transaction labelled as fraudulent in the dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FraudulentTransaction</IRI>
+        <Literal>FraudulentTransaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GraphEvidence</IRI>
+        <Literal>Evidence derived from graph analytics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GraphEvidence</IRI>
+        <Literal>GraphEvidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GraphFlaggedTransaction</IRI>
+        <Literal>Suspicion generated from graph-derived evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GraphFlaggedTransaction</IRI>
+        <Literal>GraphFlaggedTransaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighRisk</IRI>
+        <Literal>HighRisk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HighRiskAddress</IRI>
+        <Literal>Address-related entity with elevated fraud rate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighRiskAddress</IRI>
+        <Literal>HighRiskAddress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HighRiskCard</IRI>
+        <Literal>Card-related entity with elevated fraud rate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighRiskCard</IRI>
+        <Literal>HighRiskCard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#xaiPurpose"/>
+        <IRI>#HighRiskCommunity</IRI>
+        <Literal>Supports explanation: transaction belongs to a high-fraud graph community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HighRiskCommunity</IRI>
+        <Literal>Graph community with elevated fraud concentration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighRiskCommunity</IRI>
+        <Literal>HighRiskCommunity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#xaiPurpose"/>
+        <IRI>#HighRiskDevice</IRI>
+        <Literal>Supports explanation: transaction uses a historically risky device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HighRiskDevice</IRI>
+        <Literal>Device with elevated fraud rate or repeated suspicious usage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighRiskDevice</IRI>
+        <Literal>HighRiskDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#xaiPurpose"/>
+        <IRI>#HighRiskEmailDomain</IRI>
+        <Literal>Supports explanation: transaction uses a historically risky email domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HighRiskEmailDomain</IRI>
+        <Literal>Email domain with elevated fraud rate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighRiskEmailDomain</IRI>
+        <Literal>HighRiskEmailDomain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HighRiskEntity</IRI>
+        <Literal>Entity with elevated historical fraud rate or risk evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighRiskEntity</IRI>
+        <Literal>HighRiskEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HighRiskProduct</IRI>
+        <Literal>Product code with elevated fraud rate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighRiskProduct</IRI>
+        <Literal>HighRiskProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LegitimateTransaction</IRI>
+        <Literal>A transaction labelled as legitimate in the dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LegitimateTransaction</IRI>
+        <Literal>LegitimateTransaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LowRisk</IRI>
+        <Literal>LowRisk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MediumRisk</IRI>
+        <Literal>MediumRisk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ModelEvidence</IRI>
+        <Literal>Evidence derived from model output.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModelEvidence</IRI>
+        <Literal>ModelEvidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ModelFlaggedTransaction</IRI>
+        <Literal>Suspicion generated by ML model score or threshold.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModelFlaggedTransaction</IRI>
+        <Literal>ModelFlaggedTransaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#OperatingSystem</IRI>
+        <Literal>OperatingSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OperatingSystem</IRI>
+        <Literal>Operating system extracted from device information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OperatingSystem</IRI>
+        <Literal>OperatingSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#PayerEmailDomain</IRI>
+        <Literal>PayerEmailDomain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PayerEmailDomain</IRI>
+        <Literal>Payer email domain; maps to Neo4j label PayerEmailDomain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PayerEmailDomain</IRI>
+        <Literal>PayerEmailDomain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Product</IRI>
+        <Literal>Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Product</IRI>
+        <Literal>Product code entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Product</IRI>
+        <Literal>Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#ReceiverEmailDomain</IRI>
+        <Literal>ReceiverEmailDomain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReceiverEmailDomain</IRI>
+        <Literal>Receiver email domain; maps to Neo4j label ReceiverEmailDomain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ReceiverEmailDomain</IRI>
+        <Literal>ReceiverEmailDomain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RequiresInvestigation</IRI>
+        <Literal>Transaction prioritised for fraud investigation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RequiresInvestigation</IRI>
+        <Literal>RequiresInvestigation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RiskEvidence</IRI>
+        <Literal>Evidence used to explain why a transaction is risky.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiskEvidence</IRI>
+        <Literal>RiskEvidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RiskExplanation</IRI>
+        <Literal>Human-readable explanation for a fraud-risk decision.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiskExplanation</IRI>
+        <Literal>RiskExplanation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RiskScore</IRI>
+        <Literal>A numerical score representing fraud risk.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiskScore</IRI>
+        <Literal>RiskScore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_AddressHighRiskByFraudRate</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_AddressHighRiskByFraudRate</IRI>
+        <Literal>Address(?a) ^ entityFraudRate(?a, ?r) ^ swrlb:greaterThanOrEqual(?r, 0.50) -&gt; HighRiskAddress(?a)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_AddressHighRiskByFraudRate</IRI>
+        <Literal>Rule_AddressHighRiskByFraudRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_CardHighRiskByFraudRate</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_CardHighRiskByFraudRate</IRI>
+        <Literal>Card(?c) ^ entityFraudRate(?c, ?r) ^ swrlb:greaterThanOrEqual(?r, 0.50) -&gt; HighRiskCard(?c)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_CardHighRiskByFraudRate</IRI>
+        <Literal>Rule_CardHighRiskByFraudRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_CommunityHighRiskByFraudRate</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_CommunityHighRiskByFraudRate</IRI>
+        <Literal>Community(?c) ^ communityFraudRate(?c, ?r) ^ swrlb:greaterThanOrEqual(?r, 0.05) -&gt; HighRiskCommunity(?c)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_CommunityHighRiskByFraudRate</IRI>
+        <Literal>Rule_CommunityHighRiskByFraudRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_DeviceHighRiskByFraudRate</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_DeviceHighRiskByFraudRate</IRI>
+        <Literal>Device(?d) ^ entityFraudRate(?d, ?r) ^ swrlb:greaterThanOrEqual(?r, 0.80) -&gt; HighRiskDevice(?d)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_DeviceHighRiskByFraudRate</IRI>
+        <Literal>Rule_DeviceHighRiskByFraudRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_EmailDomainHighRiskByFraudRate</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_EmailDomainHighRiskByFraudRate</IRI>
+        <Literal>EmailDomain(?e) ^ entityFraudRate(?e, ?r) ^ swrlb:greaterThanOrEqual(?r, 0.50) -&gt; HighRiskEmailDomain(?e)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_EmailDomainHighRiskByFraudRate</IRI>
+        <Literal>Rule_EmailDomainHighRiskByFraudRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_ModelFlaggedByRiskScore</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_ModelFlaggedByRiskScore</IRI>
+        <Literal>Transaction(?t) ^ modelRiskScore(?t, ?s) ^ swrlb:greaterThanOrEqual(?s, 0.80) -&gt; ModelFlaggedTransaction(?t)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_ModelFlaggedByRiskScore</IRI>
+        <Literal>Rule_ModelFlaggedByRiskScore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_RequiresInvestigation</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_RequiresInvestigation</IRI>
+        <Literal>StronglySuspiciousTransaction(?t) -&gt; RequiresInvestigation(?t)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_RequiresInvestigation</IRI>
+        <Literal>Rule_RequiresInvestigation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_StrongSuspicionByMultipleHighRiskEntities</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_StrongSuspicionByMultipleHighRiskEntities</IRI>
+        <Literal>Transaction(?t) ^ highRiskEntityCount(?t, ?c) ^ swrlb:greaterThanOrEqual(?c, 2) -&gt; StronglySuspiciousTransaction(?t)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_StrongSuspicionByMultipleHighRiskEntities</IRI>
+        <Literal>Rule_StrongSuspicionByMultipleHighRiskEntities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_SuspicionByMaxEntityFraudRate</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_SuspicionByMaxEntityFraudRate</IRI>
+        <Literal>Transaction(?t) ^ maxEntityFraudRate(?t, ?r) ^ swrlb:greaterThanOrEqual(?r, 0.50) -&gt; SemanticallySuspiciousTransaction(?t)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_SuspicionByMaxEntityFraudRate</IRI>
+        <Literal>Rule_SuspicionByMaxEntityFraudRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_TransactionSuspiciousByHighRiskCommunity</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_TransactionSuspiciousByHighRiskCommunity</IRI>
+        <Literal>Transaction(?t) ^ belongsToCommunity(?t, ?c) ^ HighRiskCommunity(?c) -&gt; GraphFlaggedTransaction(?t)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_TransactionSuspiciousByHighRiskCommunity</IRI>
+        <Literal>Rule_TransactionSuspiciousByHighRiskCommunity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_TransactionSuspiciousByHighRiskDevice</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_TransactionSuspiciousByHighRiskDevice</IRI>
+        <Literal>Transaction(?t) ^ usedDevice(?t, ?d) ^ HighRiskDevice(?d) -&gt; SemanticallySuspiciousTransaction(?t)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_TransactionSuspiciousByHighRiskDevice</IRI>
+        <Literal>Rule_TransactionSuspiciousByHighRiskDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_TransactionSuspiciousByHighRiskEmail</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_TransactionSuspiciousByHighRiskEmail</IRI>
+        <Literal>Transaction(?t) ^ usedPayerEmailDomain(?t, ?e) ^ HighRiskEmailDomain(?e) -&gt; SemanticallySuspiciousTransaction(?t)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_TransactionSuspiciousByHighRiskEmail</IRI>
+        <Literal>Rule_TransactionSuspiciousByHighRiskEmail</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#implementationNote"/>
+        <IRI>#Rule_TransactionSuspiciousByReceiverEmail</IRI>
+        <Literal>Copy this rule into Protégé SWRLTab if executable SWRL reasoning is required.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#swrlRuleText"/>
+        <IRI>#Rule_TransactionSuspiciousByReceiverEmail</IRI>
+        <Literal>Transaction(?t) ^ usedReceiverEmailDomain(?t, ?e) ^ HighRiskEmailDomain(?e) -&gt; SemanticallySuspiciousTransaction(?t)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rule_TransactionSuspiciousByReceiverEmail</IRI>
+        <Literal>Rule_TransactionSuspiciousByReceiverEmail</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#ScreenResolution</IRI>
+        <Literal>ScreenResolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ScreenResolution</IRI>
+        <Literal>Screen resolution extracted from device information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ScreenResolution</IRI>
+        <Literal>ScreenResolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SemanticEvidence</IRI>
+        <Literal>Evidence derived from ontology reasoning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticEvidence</IRI>
+        <Literal>SemanticEvidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#xaiPurpose"/>
+        <IRI>#SemanticallySuspiciousTransaction</IRI>
+        <Literal>Explains that suspicion was produced by explicit semantic rules.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SemanticallySuspiciousTransaction</IRI>
+        <Literal>Suspicion inferred by ontology rules.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SemanticallySuspiciousTransaction</IRI>
+        <Literal>SemanticallySuspiciousTransaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StronglySuspiciousTransaction</IRI>
+        <Literal>Suspicion supported by multiple high-risk indicators.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StronglySuspiciousTransaction</IRI>
+        <Literal>StronglySuspiciousTransaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SuspiciousInfrastructure</IRI>
+        <Literal>Shared infrastructure associated with suspicious or fraudulent behaviour.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SuspiciousInfrastructure</IRI>
+        <Literal>SuspiciousInfrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SuspiciousTransaction</IRI>
+        <Literal>A transaction inferred or flagged as suspicious.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SuspiciousTransaction</IRI>
+        <Literal>SuspiciousTransaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ThresholdPolicy</IRI>
+        <Literal>A threshold policy for operational fraud decisions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ThresholdPolicy</IRI>
+        <Literal>ThresholdPolicy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jLabel"/>
+        <IRI>#Transaction</IRI>
+        <Literal>Transaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transaction</IRI>
+        <Literal>A payment transaction represented as a Neo4j Transaction node.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transaction</IRI>
+        <Literal>Transaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#belongsToCommunity</IRI>
+        <Literal>Links a transaction to its Louvain community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#belongsToCommunity</IRI>
+        <Literal>belongsToCommunity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#communityFraudRate</IRI>
+        <Literal>Fraud rate within a graph community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#communityFraudRate</IRI>
+        <Literal>communityFraudRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#communityId</IRI>
+        <Literal>communityId</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#xaiPurpose"/>
+        <IRI>#communityId</IRI>
+        <Literal>Graph XAI: community membership used to contextualise risk.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#communityId</IRI>
+        <Literal>Louvain community ID from Neo4j GDS.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#communityId</IRI>
+        <Literal>communityId</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#communitySize</IRI>
+        <Literal>Number of transactions in a community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#communitySize</IRI>
+        <Literal>communitySize</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#degree</IRI>
+        <Literal>degree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#degree</IRI>
+        <Literal>Node degree feature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#degree</IRI>
+        <Literal>degree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#entityFraudRate</IRI>
+        <Literal>entity_fraud_rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#entityFraudRate</IRI>
+        <Literal>Fraud rate calculated for an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#entityFraudRate</IRI>
+        <Literal>entityFraudRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#entityId</IRI>
+        <Literal>Identifier for entity individuals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#entityId</IRI>
+        <Literal>entityId</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#evidenceRefersToCommunity</IRI>
+        <Literal>Links evidence to the relevant community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#evidenceRefersToCommunity</IRI>
+        <Literal>evidenceRefersToCommunity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#evidenceRefersToEntity</IRI>
+        <Literal>Links evidence to the relevant entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#evidenceRefersToEntity</IRI>
+        <Literal>evidenceRefersToEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#evidenceStrength</IRI>
+        <Literal>Numerical strength of evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#evidenceStrength</IRI>
+        <Literal>evidenceStrength</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#explainsTransaction</IRI>
+        <Literal>Links an explanation to the transaction it explains.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#explainsTransaction</IRI>
+        <Literal>explainsTransaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#explanationText</IRI>
+        <Literal>Human-readable XAI explanation text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#explanationText</IRI>
+        <Literal>explanationText</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#fraudTransactionCount</IRI>
+        <Literal>fraud_tx</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fraudTransactionCount</IRI>
+        <Literal>Fraudulent transactions linked to an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#fraudTransactionCount</IRI>
+        <Literal>fraudTransactionCount</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGraphEvidence</IRI>
+        <Literal>Links a transaction to graph-derived evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasGraphEvidence</IRI>
+        <Literal>hasGraphEvidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasModelEvidence</IRI>
+        <Literal>Links a transaction to model evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasModelEvidence</IRI>
+        <Literal>hasModelEvidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRiskEvidence</IRI>
+        <Literal>Links a transaction to evidence supporting its risk classification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRiskEvidence</IRI>
+        <Literal>hasRiskEvidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRiskExplanation</IRI>
+        <Literal>Links a transaction to a human-readable explanation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRiskExplanation</IRI>
+        <Literal>hasRiskExplanation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSemanticEvidence</IRI>
+        <Literal>Links a transaction to semantic evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSemanticEvidence</IRI>
+        <Literal>hasSemanticEvidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#highRiskEntityCount</IRI>
+        <Literal>high_risk_entity_count</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#xaiPurpose"/>
+        <IRI>#highRiskEntityCount</IRI>
+        <Literal>Feature-level XAI: number of independent high-risk linked entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#highRiskEntityCount</IRI>
+        <Literal>Count of linked high-risk entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#highRiskEntityCount</IRI>
+        <Literal>highRiskEntityCount</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#isFraud</IRI>
+        <Literal>is_fraud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isFraud</IRI>
+        <Literal>Fraud label from the dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFraud</IRI>
+        <Literal>isFraud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#maxEntityFraudRate</IRI>
+        <Literal>max_entity_fraud_rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#xaiPurpose"/>
+        <IRI>#maxEntityFraudRate</IRI>
+        <Literal>Feature-level XAI: highest fraud rate among connected entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maxEntityFraudRate</IRI>
+        <Literal>Maximum fraud rate of connected entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maxEntityFraudRate</IRI>
+        <Literal>maxEntityFraudRate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modelRiskScore</IRI>
+        <Literal>Generic model fraud probability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#modelRiskScore</IRI>
+        <Literal>modelRiskScore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#neuralNetworkScore</IRI>
+        <Literal>Neural network fraud probability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#neuralNetworkScore</IRI>
+        <Literal>neuralNetworkScore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#pageRank</IRI>
+        <Literal>pagerank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#xaiPurpose"/>
+        <IRI>#pageRank</IRI>
+        <Literal>Graph XAI: centrality/influence of a transaction or entity in the graph.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pageRank</IRI>
+        <Literal>PageRank score from Neo4j GDS.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pageRank</IRI>
+        <Literal>pageRank</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#randomForestScore</IRI>
+        <Literal>Random Forest fraud probability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#randomForestScore</IRI>
+        <Literal>randomForestScore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#riskLevel</IRI>
+        <Literal>Risk level such as Low, Medium, High, Critical.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#riskLevel</IRI>
+        <Literal>riskLevel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#semanticRiskScore</IRI>
+        <Literal>Risk score generated from semantic reasoning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#semanticRiskScore</IRI>
+        <Literal>semanticRiskScore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sharesInfrastructureWith</IRI>
+        <Literal>Indicates transactions share at least one entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sharesInfrastructureWith</IRI>
+        <Literal>sharesInfrastructureWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#totalTransactionCount</IRI>
+        <Literal>total_tx</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#totalTransactionCount</IRI>
+        <Literal>Total transactions linked to an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#totalTransactionCount</IRI>
+        <Literal>totalTransactionCount</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#transactionAmount</IRI>
+        <Literal>transaction_amt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#transactionAmount</IRI>
+        <Literal>Maps to transaction_amt / TransactionAmt.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transactionAmount</IRI>
+        <Literal>transactionAmount</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#transactionDatetime</IRI>
+        <Literal>transaction_dt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#transactionDatetime</IRI>
+        <Literal>Maps to transaction_dt / TransactionDT.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transactionDatetime</IRI>
+        <Literal>transactionDatetime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jPropertyName"/>
+        <IRI>#transactionId</IRI>
+        <Literal>transaction_id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#transactionId</IRI>
+        <Literal>Maps to transaction_id / TransactionID.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transactionId</IRI>
+        <Literal>transactionId</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedAddr1</IRI>
+        <Literal>USED_ADDR1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedAddr1</IRI>
+        <Literal>Matches Neo4j USED_ADDR1 relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedAddr1</IRI>
+        <Literal>usedAddr1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedAddr2</IRI>
+        <Literal>USED_ADDR2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedAddr2</IRI>
+        <Literal>Matches Neo4j USED_ADDR2 relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedAddr2</IRI>
+        <Literal>usedAddr2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedBrowser</IRI>
+        <Literal>USED_BROWSER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedBrowser</IRI>
+        <Literal>Matches Neo4j USED_BROWSER relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedBrowser</IRI>
+        <Literal>usedBrowser</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedCard1</IRI>
+        <Literal>USED_CARD1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedCard1</IRI>
+        <Literal>Matches Neo4j USED_CARD1 relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedCard1</IRI>
+        <Literal>usedCard1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedCard2</IRI>
+        <Literal>USED_CARD2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedCard2</IRI>
+        <Literal>Matches Neo4j USED_CARD2 relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedCard2</IRI>
+        <Literal>usedCard2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedCard3</IRI>
+        <Literal>USED_CARD3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedCard3</IRI>
+        <Literal>Matches Neo4j USED_CARD3 relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedCard3</IRI>
+        <Literal>usedCard3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedCard5</IRI>
+        <Literal>USED_CARD5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedCard5</IRI>
+        <Literal>Matches Neo4j USED_CARD5 relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedCard5</IRI>
+        <Literal>usedCard5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedCardNetwork</IRI>
+        <Literal>USED_CARD_NETWORK</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedCardNetwork</IRI>
+        <Literal>Matches Neo4j USED_CARD_NETWORK relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedCardNetwork</IRI>
+        <Literal>usedCardNetwork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedCardType</IRI>
+        <Literal>USED_CARD_TYPE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedCardType</IRI>
+        <Literal>Matches Neo4j USED_CARD_TYPE relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedCardType</IRI>
+        <Literal>usedCardType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedDevice</IRI>
+        <Literal>USED_DEVICE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedDevice</IRI>
+        <Literal>Matches Neo4j USED_DEVICE relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedDevice</IRI>
+        <Literal>usedDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedDeviceType</IRI>
+        <Literal>USED_DEVICE_TYPE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedDeviceType</IRI>
+        <Literal>Matches Neo4j USED_DEVICE_TYPE relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedDeviceType</IRI>
+        <Literal>usedDeviceType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedOperatingSystem</IRI>
+        <Literal>USED_OPERATING_SYSTEM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedOperatingSystem</IRI>
+        <Literal>Matches Neo4j USED_OPERATING_SYSTEM relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedOperatingSystem</IRI>
+        <Literal>usedOperatingSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedPayerEmailDomain</IRI>
+        <Literal>USED_PAYER_EMAIL_DOMAIN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedPayerEmailDomain</IRI>
+        <Literal>Matches Neo4j USED_PAYER_EMAIL_DOMAIN relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedPayerEmailDomain</IRI>
+        <Literal>usedPayerEmailDomain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedProduct</IRI>
+        <Literal>USED_PRODUCT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedProduct</IRI>
+        <Literal>Matches Neo4j USED_PRODUCT relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedProduct</IRI>
+        <Literal>usedProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedReceiverEmailDomain</IRI>
+        <Literal>USED_RECEIVER_EMAIL_DOMAIN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedReceiverEmailDomain</IRI>
+        <Literal>Matches Neo4j USED_RECEIVER_EMAIL_DOMAIN relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedReceiverEmailDomain</IRI>
+        <Literal>usedReceiverEmailDomain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#neo4jRelationshipType"/>
+        <IRI>#usedScreenResolution</IRI>
+        <Literal>USED_SCREEN_RESOLUTION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usedScreenResolution</IRI>
+        <Literal>Matches Neo4j USED_SCREEN_RESOLUTION relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedScreenResolution</IRI>
+        <Literal>usedScreenResolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesEntity</IRI>
+        <Literal>Generic transaction-to-entity relationship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usesEntity</IRI>
+        <Literal>usesEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#xgboostScore</IRI>
+        <Literal>XGBoost fraud probability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#xgboostScore</IRI>
+        <Literal>xgboostScore</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

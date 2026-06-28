@@ -1,0 +1,172 @@
+TransactionID,risk_band,fraud_probability,actual_isFraud,community_id,pagerank,degree,max_entity_fraud_rate,high_risk_entity_count,pellet_requires_investigation,ontology_risk_score,layman_summary
+3208782,Very high risk,1.0,1,283,0.5127877268852356,10,0.6025641025641025,2,1,0.5815384615384616,"Transaction ID: 3208782
+Risk band: Very high risk
+Predicted fraud probability: 100.0%
+Actual label in test data: 1
+
+Main reasons:
+- Pellet reasoning inferred that this transaction requires investigation.
+- Ontology rules marked this transaction as requiring investigation.
+- The transaction is linked to at least one high-risk entity.
+- The transaction is linked to 2 high-risk entities.
+- The riskiest linked entity has a historical fraud rate of 60.3%.
+- The transaction has above-median PageRank, suggesting graph centrality.
+- The transaction belongs to graph community 283.
+- The ontology risk score is elevated at 0.58.
+
+Suggested action: Review before approval or escalation."
+3121894,Very high risk,1.0,1,1092,0.6621877402174653,15,0.7659574468085106,3,1,0.7395744680851063,"Transaction ID: 3121894
+Risk band: Very high risk
+Predicted fraud probability: 100.0%
+Actual label in test data: 1
+
+Main reasons:
+- Pellet reasoning inferred that this transaction requires investigation.
+- Ontology rules marked this transaction as requiring investigation.
+- The transaction is linked to at least one high-risk entity.
+- The transaction is linked to 3 high-risk entities.
+- The riskiest linked entity has a historical fraud rate of 76.6%.
+- The transaction has above-median PageRank, suggesting graph centrality.
+- The transaction has above-median graph degree, suggesting repeated shared connections.
+- The transaction belongs to graph community 1092.
+- The ontology risk score is elevated at 0.74.
+- The transaction is connected to a high number of graph entities, indicating strong network involvement.
+
+Suggested action: Review before approval or escalation."
+3186621,Very high risk,0.9066666666666666,1,283,0.5045252883959032,10,0.06694164298349303,0,0,0.040164985790095815,"Transaction ID: 3186621
+Risk band: Very high risk
+Predicted fraud probability: 90.7%
+Actual label in test data: 1
+
+Main reasons:
+- The transaction belongs to graph community 283.
+
+Suggested action: Review before approval or escalation."
+3387754,High risk,0.83,1,1092,0.6606741601214438,15,0.21875,0,0,0.13125,"Transaction ID: 3387754
+Risk band: High risk
+Predicted fraud probability: 83.0%
+Actual label in test data: 1
+
+Main reasons:
+- The transaction has above-median PageRank, suggesting graph centrality.
+- The transaction has above-median graph degree, suggesting repeated shared connections.
+- The transaction belongs to graph community 1092.
+- The transaction is connected to a high number of graph entities, indicating strong network involvement.
+
+Suggested action: Review before approval or escalation."
+3186493,High risk,0.79,1,865,0.5129343298211124,10,0.043589687424703746,0,0,0.026153812454822248,"Transaction ID: 3186493
+Risk band: High risk
+Predicted fraud probability: 79.0%
+Actual label in test data: 1
+
+Main reasons:
+- The transaction has above-median PageRank, suggesting graph centrality.
+- The transaction belongs to graph community 865.
+
+Suggested action: Review before approval or escalation."
+3219594,High risk,0.7566666666666667,1,31055,0.5216765561956603,11,0.2954856361149111,0,0,0.17729138166894665,"Transaction ID: 3219594
+Risk band: High risk
+Predicted fraud probability: 75.7%
+Actual label in test data: 1
+
+Main reasons:
+- The transaction has above-median PageRank, suggesting graph centrality.
+- The transaction has above-median graph degree, suggesting repeated shared connections.
+- The transaction belongs to graph community 31055.
+- The transaction is connected to a high number of graph entities, indicating strong network involvement.
+
+Suggested action: Review before approval or escalation."
+3145410,Medium risk,0.71,1,31055,0.5625017692168697,12,0.38235294117647056,0,0,0.22941176470588232,"Transaction ID: 3145410
+Risk band: Medium risk
+Predicted fraud probability: 71.0%
+Actual label in test data: 1
+
+Main reasons:
+- The transaction has above-median PageRank, suggesting graph centrality.
+- The transaction has above-median graph degree, suggesting repeated shared connections.
+- The transaction belongs to graph community 31055.
+- The transaction is connected to a high number of graph entities, indicating strong network involvement.
+
+Suggested action: Monitor or review if additional risk signals are present."
+3166829,Medium risk,0.6633333333333333,1,283,0.6887614964232899,16,0.11891655744866754,0,0,0.07134993446920052,"Transaction ID: 3166829
+Risk band: Medium risk
+Predicted fraud probability: 66.3%
+Actual label in test data: 1
+
+Main reasons:
+- The transaction has above-median PageRank, suggesting graph centrality.
+- The transaction has above-median graph degree, suggesting repeated shared connections.
+- The transaction belongs to graph community 283.
+- The transaction is connected to a high number of graph entities, indicating strong network involvement.
+
+Suggested action: Monitor or review if additional risk signals are present."
+3372892,Medium risk,0.56,1,1092,0.6775909257688075,16,0.18181818181818182,0,0,0.10909090909090909,"Transaction ID: 3372892
+Risk band: Medium risk
+Predicted fraud probability: 56.0%
+Actual label in test data: 1
+
+Main reasons:
+- The transaction has above-median PageRank, suggesting graph centrality.
+- The transaction has above-median graph degree, suggesting repeated shared connections.
+- The transaction belongs to graph community 1092.
+- The transaction is connected to a high number of graph entities, indicating strong network involvement.
+
+Suggested action: Monitor or review if additional risk signals are present."
+3307105,Low risk,0.44,1,762,0.5142923980455226,10,0.043589687424703746,0,0,0.026153812454822248,"Transaction ID: 3307105
+Risk band: Low risk
+Predicted fraud probability: 44.0%
+Actual label in test data: 1
+
+Main reasons:
+- The transaction has above-median PageRank, suggesting graph centrality.
+- The transaction belongs to graph community 762.
+
+Suggested action: Low priority unless other business rules are triggered."
+3412117,Low risk,0.35333333333333333,1,355,0.505204113726468,10,0.06694164298349303,0,0,0.040164985790095815,"Transaction ID: 3412117
+Risk band: Low risk
+Predicted fraud probability: 35.3%
+Actual label in test data: 1
+
+Main reasons:
+- The transaction belongs to graph community 355.
+
+Suggested action: Low priority unless other business rules are triggered."
+3261771,Low risk,0.25666666666666665,0,31055,0.6876111560943391,16,0.12081218274111676,0,0,0.07248730964467005,"Transaction ID: 3261771
+Risk band: Low risk
+Predicted fraud probability: 25.7%
+Actual label in test data: 0
+
+Main reasons:
+- The transaction has above-median PageRank, suggesting graph centrality.
+- The transaction has above-median graph degree, suggesting repeated shared connections.
+- The transaction belongs to graph community 31055.
+- The transaction is connected to a high number of graph entities, indicating strong network involvement.
+
+Suggested action: Low priority unless other business rules are triggered."
+3217938,Very low risk,0.0,0,355,0.5085105043472128,10,0.043589687424703746,0,0,0.026153812454822248,"Transaction ID: 3217938
+Risk band: Very low risk
+Predicted fraud probability: 0.0%
+Actual label in test data: 0
+
+Main reasons:
+- The transaction belongs to graph community 355.
+
+Suggested action: Low priority unless other business rules are triggered."
+3441776,Very low risk,0.0,0,355,0.47758328483811074,9,0.03429299161316291,0,0,0.020575794967897746,"Transaction ID: 3441776
+Risk band: Very low risk
+Predicted fraud probability: 0.0%
+Actual label in test data: 0
+
+Main reasons:
+- The transaction belongs to graph community 355.
+
+Suggested action: Low priority unless other business rules are triggered."
+3412980,Very low risk,0.0,0,355,0.5086874125768489,10,0.034733889916187595,0,0,0.020840333949712558,"Transaction ID: 3412980
+Risk band: Very low risk
+Predicted fraud probability: 0.0%
+Actual label in test data: 0
+
+Main reasons:
+- The transaction belongs to graph community 355.
+
+Suggested action: Low priority unless other business rules are triggered."
