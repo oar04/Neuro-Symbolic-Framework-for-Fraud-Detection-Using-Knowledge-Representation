@@ -123,7 +123,6 @@ Then run the Cypher scripts in this order:
 ```text
 cypher/create_graph.cypher
 cypher/graph_features.cypher
-cypher/export_features.cypher
 ```
 
 These scripts are responsible for:
@@ -131,7 +130,7 @@ These scripts are responsible for:
 1. Creating transaction and entity nodes
 2. Creating relationships between transactions and entities
 3. Running graph algorithms
-4. Exporting graph-derived features
+4. Exporting is done in the notebook
 
 The graph should include nodes such as:
 
